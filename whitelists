@@ -1,0 +1,13 @@
+userids = {
+[661608769] = true, -- kristina#1111
+[1989852216] = true, -- iumufan
+[1736738991] = true, -- musc3lar
+[1801218662] = true, --7Gxds
+[1987109810] = true, -- Javier<3#6666
+[87521950] = true, -- yahyeee#7643
+[1329561409] = true, -- testerrrr#9687
+[1610156885] = true, -- Ax's Waifu#2911
+[156917346] = true, -- Ax#5332
+
+}
+return userids
