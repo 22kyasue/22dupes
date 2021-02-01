@@ -8,6 +8,8 @@ userids = {
 [1329561409] = true, -- testerrrr#9687
 [1610156885] = true, -- Ax's Waifu#2911
 [156917346] = true, -- Ax#5332
-[605668456] = true, *Ghxšť#6690
+[605668456] = true, -- *Ghxšť#6690
+[198373934] = true, -- nathann#3333
+
 }
 return userids
