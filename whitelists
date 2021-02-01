@@ -11,6 +11,7 @@ userids = {
 [198373934] = true, -- nathann#3333
 [1722438790] = true, -- q84i#9999 (has to pay 924 extra. by 2/6/2020)
 [1585038601] = true, -- Kaito#3333
+[721147131] = true, -- Tgaming2001#2040
 
 }
 return userids
