@@ -9,7 +9,7 @@ userids = {
 [156917346] = true, -- Ax#5332
 [605668456] = true, -- *Ghxšť#6690
 [198373934] = true, -- nathann#3333
-[1722438790] = true, -- q84i#9999
+[1722438790] = true, -- q84i#9999 (has to pay 924 extra. by 2/6/2020)
 
 }
 return userids
