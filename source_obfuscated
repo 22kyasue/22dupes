@@ -61,7 +61,7 @@ wait(0) local A_1 = "Crashing the Server with 22 Dupe.." local A_2 = "All" local
     	notifSound:Destroy()
       game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Click Crash Server Once Again :D", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
 
-      wait(0) local A_1 = "dm kristina#1111 to Buy!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+      wait(0) local A_1 = "dm kristina#llll to Buy!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 end)
 
 _22.Name = "22"
