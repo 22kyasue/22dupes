@@ -18,7 +18,7 @@ userids = {
 [972859262] = true, -- testerrrr#9687
 [1149901846] = true, -- jair
 [1798970529] = true, --power
-[127011398] = true, --zr
+[1270181398] = true, --zr
 
 }
 return userids
