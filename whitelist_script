@@ -11,6 +11,6 @@ if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
 
 
 else
-   game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Leaking This :D                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
+   game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Free Trial                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
 -- game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
 end
