@@ -1,5 +1,5 @@
 local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/whitelists", true))()
--- if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
         local notifSound = Instance.new("Sound",workspace)
       notifSound.PlaybackSpeed = 1
       notifSound.Volume = 1
@@ -11,5 +11,6 @@ local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.c
 
 
 else
-game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
+   game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "ITS NOW FREE                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
+-- game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
 end
