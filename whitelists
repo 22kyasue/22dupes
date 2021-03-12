@@ -18,5 +18,6 @@ userids = {
 [1798970529] = true, --power
 [1270181398] = true, --zr
 [2236041157] = true, --hadi
+[2351144328] = true, --woz
 }
 return userids
