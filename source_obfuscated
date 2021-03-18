@@ -43,7 +43,7 @@ CrashServer.Text = "Crash VIP Server"
 CrashServer.TextColor3 = Color3.fromRGB(255, 255, 255)
 CrashServer.TextSize = 14.000
 CrashServer.MouseButton1Down:connect(function()
-
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Crashing..", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Okay"})
 wait(0) local A_1 = "Crashing the Server with 22 Dupe.." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 local natass = "/"
@@ -60,9 +60,7 @@ local natass = "/"
     	notifSound.SoundId = "rbxassetid://1837974324"
     	notifSound.PlayOnRemove = true
     	notifSound:Destroy()
-      game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Crashing..", Icon = "rbxassetid://505845268", Duration = 30, Button1 = "Okay"})
 
-      wait(0) local A_1 = "dm kristina#llll to Buy!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 end)
 
 _22.Name = "22"
