@@ -98,6 +98,10 @@ AutoDropStop.Text = "Stop"
 AutoDropStop.TextColor3 = Color3.fromRGB(255, 255, 255)
 AutoDropStop.TextSize = 14.000
 AutoDropStop.MouseButton1Click:connect(function()
+game.StarterGui:SetCore("SendNotification", {
+      Title = "22 Dupe";
+      Text = "Stopped Auto-Dropping"
+    })
 	_G.DROPCASH = false
 end)
 
@@ -114,6 +118,10 @@ AutoDropStart.Text = "Start"
 AutoDropStart.TextColor3 = Color3.fromRGB(255, 255, 255)
 AutoDropStart.TextSize = 14.000
 AutoDropStart.MouseButton1Click:connect(function()
+game.StarterGui:SetCore("SendNotification", {
+      Title = "22 Dupe";
+      Text = "Started Auto-Dropping"
+    })
 	_G.DROPCASH = true
 end)
 
