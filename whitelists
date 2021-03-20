@@ -19,5 +19,6 @@ userids = {
 [1270181398] = true, --zr
 [2236041157] = true, --hadi
 [2351144328] = true, --woz
+[1216786113] = true, --random kid i met
 }
 return userids
