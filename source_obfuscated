@@ -171,8 +171,9 @@ local natass = "/"
     SafeTeleport.TextColor3 = Color3.fromRGB(255, 255, 255)
     SafeTeleport.TextSize = 14.000
     SafeTeleport.MouseButton1Down:connect(function()
-    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-118, -87, 150))
-    local notifSound = Instance.new("Sound",workspace)
+    --game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-118, -87, 150))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(200, 38, 200015))
+    local notifSound = Instance.new("Sound",workspace) 
     	notifSound.PlaybackSpeed = 1
     	notifSound.Volume = 0.5
     	notifSound.SoundId = "rbxassetid://170765130"
