@@ -11,6 +11,12 @@ if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
        game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
 
 elseif blacklists[game:service('Players').LocalPlayer.UserId] then
+ local notifSound = Instance.new("Sound",workspace)
+      notifSound.PlaybackSpeed = 1
+      notifSound.Volume = 1
+      notifSound.SoundId = "rbxassetid://1561112424"
+      notifSound.PlayOnRemove = true
+      notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Whitelist Checked                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
 wait(6)
@@ -28,6 +34,12 @@ wait(5)
 game:service('Players').LocalPlayer:Kick('USER: BANNED')
 
 else
+ local notifSound = Instance.new("Sound",workspace)
+      notifSound.PlaybackSpeed = 1
+      notifSound.Volume = 1
+      notifSound.SoundId = "rbxassetid://1561112424"
+      notifSound.PlayOnRemove = true
+      notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Free Trial                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
 --game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
