@@ -28,6 +28,8 @@ wait(5)
 game:service('Players').LocalPlayer:Kick('USER: BANNED')
 
 else
-game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Free Trial                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
+--game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
 
 end
