@@ -21,7 +21,7 @@ wait(18)
       notifSound:Destroy()
 loadstring(game:GetObjects("rbxassetid://4698064966")[1].Source)()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Blacklist Checked                    ", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
-wait(18)
+wait(5)
 game:service('Players').LocalPlayer:Kick('USER: BANNED')
 
 else
