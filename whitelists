@@ -20,6 +20,5 @@ userids = {
 [2236041157] = true, --hadi
 [2351144328] = true, --woz
 [1216786113] = true, --random kid i met
-[381183805] = true, --BeepBoop
 }
 return userids
