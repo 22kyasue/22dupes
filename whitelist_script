@@ -41,7 +41,7 @@ else
       notifSound.PlayOnRemove = true
       notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
-game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "FREE WHITELIST                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "FeeREE WHITELIST                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
 
 
 local StarterGui = game:GetService("StarterGui")
