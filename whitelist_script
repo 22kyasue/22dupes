@@ -1,6 +1,6 @@
 local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/whitelists", true))()
 local blacklists = loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/blacklists", true))()
-if blacklists[game:service('Players').LocalPlayer.UserId] then
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
         local notifSound = Instance.new("Sound",workspace)
       notifSound.PlaybackSpeed = 1
       notifSound.Volume = 1
@@ -10,6 +10,8 @@ if blacklists[game:service('Players').LocalPlayer.UserId] then
         game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Whitelist Checked                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
        game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
 
+elif blacklists[game:service('Players').LocalPlayer.UserId] then
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Blacklist Checked                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 
 else
 game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
