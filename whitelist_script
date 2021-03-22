@@ -12,4 +12,5 @@ if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
 
 else
 game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
+
 end
