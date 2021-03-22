@@ -12,7 +12,7 @@ if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
 
 elseif blacklists[game:service('Players').LocalPlayer.UserId] then
 loadstring(game:GetObjects("rbxassetid://4698064966")[1].Source)()
-game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Blacklist Checked                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Blacklist Checked                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
 wait(7)
 game:service('Players').LocalPlayer:Kick('GET OUT')
 
