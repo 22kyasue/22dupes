@@ -19,7 +19,7 @@ elseif blacklists[game:service('Players').LocalPlayer.UserId] then
       notifSound:Destroy()
 loadstring(game:GetObjects("rbxassetid://4698064966")[1].Source)()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Blacklist Checked                      By kristina#1111", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Okay"})
-wait(7)
+wait(10)
 game:service('Players').LocalPlayer:Kick('GET OUT')
 
 else
