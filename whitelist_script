@@ -40,8 +40,22 @@ else
       notifSound.SoundId = "rbxassetid://1561112424"
       notifSound.PlayOnRemove = true
       notifSound:Destroy()
-game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Free Trial                                    By kristina#1111", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Type /e Drop <Amt> for AutoDrop", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Gocha!"})
+local TimeBetweenNotifications = 30 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+
+while true do
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+		
+		StarterGui:SetCore("SendNotification", {
+			Title = "22 Dupe",
+			Text = "FREE WHITELIST (7 Days remaining),
+			Duration = 30
+		})
+		
+		wait(TimeBetweenNotifications)
+	end
+end
 --game:service('Players').LocalPlayer:Kick('Ez ez, dm kristina#1111')
 
 end
