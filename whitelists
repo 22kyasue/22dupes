@@ -13,12 +13,9 @@ userids = {
 [1585038601] = true, -- Kaito#3333
 [721147131] = true, -- Tgaming2001#2040
 [1921647723] = true, -- 9ACTEC#2310
-[976425021] = true, -- Vrin#3468
-[972859262] = true, -- testerrrr#9687
 [1149901846] = true, -- jair
 [1270181398] = true, --zr
 [2236041157] = true, --hadi
 [2351144328] = true, --woz
-[1216786113] = true, --random kid i met
 }
 return userids
