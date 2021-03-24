@@ -16,9 +16,10 @@ end)
                 money = money + cash
             end
         end
-        game:GetService("Players"):FindFirstChild(game.Players.LocalPlayer.Name).PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = formatNumber(money)
+        game:GetService("Players"):FindFirstChild(game.Players.LocalPlayer.Name).PlayerGui.MainScreenGui.AnimationPack.TextLabel.Text = formatNumber(money)
     end
 while wait()do 
     SetCash()
 
 end
+
