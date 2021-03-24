@@ -150,12 +150,11 @@ end)
     local notifSound = Instance.new("Sound",workspace)
     	notifSound.PlaybackSpeed = 1
     	notifSound.Volume = 0.5
-    	notifSound.SoundId = "rbxassetid://1837974324"
+    	notifSound.SoundId = "rbxassetid://170765130"
     	notifSound.PlayOnRemove = true
     	notifSound:Destroy()
       game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Crashing...", Icon = "rbxassetid://505845268", Duration = 30, Button1 = "Okay"})
 
-      wait(0) local A_1 = "dm kristina#llll to Buy!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
   end)
 
 
