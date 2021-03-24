@@ -1,0 +1,42 @@
+---OMG /e drop 1 mil after tax caluculated
+local player = game.Players.LocalPlayer
+local startmoney = player.DataFolder.Currency.Value
+local currentmoney = player.DataFolder.Currency.Value
+coroutine.resume(coroutine.create(function()
+    currentmoney = player.DataFolder.Currency.Value
+while wait()do
+currentmoney = player.DataFolder.Currency.Value
+end
+end))
+
+local onemillion = 1430000
+local twomillion = 2860000
+local threemillion = (twomillion + onemillion)
+local fourmillion = (threemillion + onemillion) 
+local fivemillion = (fourmillion + onemillion)
+local tenmillion = (fivemillion + fivemillion)
+
+local function drop() 
+    wait()
+    game:GetService("ReplicatedStorage").MainEvent:FireServer("DropMoney","10000")
+end
+
+player.Chatted:Connect(function(message)
+    if message == ('/e drop 14k') then
+    repeat drop() until currentmoney <= (startmoney-20000)
+    if message == ('/e drop 7k') then
+    repeat drop() until currentmoney <= (startmoney-10000)
+    elseif message == ('/e drop 1 mil') then
+    repeat drop() until currentmoney <= (startmoney-onemillion)
+    elseif message == ('/e drop 2 mil') then
+    repeat drop() until currentmoney <= (startmoney-twomillion)
+    elseif message == ('/e drop 3 mil') then
+    repeat drop() until currentmoney <= (startmoney-threemillion)
+    elseif message == ('/e drop 4 mil') then
+    repeat drop() until currentmoney <= (startmoney-fourmillion)
+    elseif message == ('/e drop 5 mil') then
+    repeat drop() until currentmoney <= (startmoney-fivemillion)
+    elseif message == ('/e drop 10 mil') then
+    repeat drop() until currentmoney <= (startmoney-tenmillion)
+    end
+end)
