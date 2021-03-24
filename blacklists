@@ -12,5 +12,6 @@ userids = {
 [2416855085] = true, --AnasDummy
 [568054592] = true, --noxuszxn
 [1897562065] = true, --oyaai
+[617802523] = true, --S3YS
 }
 return userids
