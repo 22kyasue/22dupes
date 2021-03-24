@@ -8,7 +8,8 @@ userids = {
 [1915171127] = true, --0927jdjdk
 [2007810089] = true, --1110dkfsglsl
 [1795183780] = true, --strucidCrates
-[1066035323] = true, --vivaanhira
+[1066035323] = true, --vivaanhira--
+[2416855085] = true, --AnasDummy
 
 }
 return userids
