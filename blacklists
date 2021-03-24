@@ -10,6 +10,7 @@ userids = {
 [1795183780] = true, --strucidCrates
 [1066035323] = true, --vivaanhira--
 [2416855085] = true, --AnasDummy
+[568054592] = true, --noxuszxn
 
 }
 return userids
