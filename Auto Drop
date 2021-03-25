@@ -22,21 +22,21 @@ local function drop()
 end
 
 player.Chatted:Connect(function(message)
-    if message == ('/e drop 14k') then
+    if message == ('/e cash 14k') then
     repeat drop() until currentmoney <= (startmoney-20000)
-    if message == ('/e drop 7k') then
+    elseif message == ('/e cash 7k') then
     repeat drop() until currentmoney <= (startmoney-10000)
-    elseif message == ('/e drop 1 mil') then
+    elseif message == ('/e cash 1 mil') then
     repeat drop() until currentmoney <= (startmoney-onemillion)
-    elseif message == ('/e drop 2 mil') then
+    elseif message == ('/e cash 2 mil') then
     repeat drop() until currentmoney <= (startmoney-twomillion)
-    elseif message == ('/e drop 3 mil') then
+    elseif message == ('/e cash 3 mil') then
     repeat drop() until currentmoney <= (startmoney-threemillion)
-    elseif message == ('/e drop 4 mil') then
+    elseif message == ('/e cash 4 mil') then
     repeat drop() until currentmoney <= (startmoney-fourmillion)
-    elseif message == ('/e drop 5 mil') then
+    elseif message == ('/e cash 5 mil') then
     repeat drop() until currentmoney <= (startmoney-fivemillion)
-    elseif message == ('/e drop 10 mil') then
+    elseif message == ('/e cash 10 mil') then
     repeat drop() until currentmoney <= (startmoney-tenmillion)
     end
 end)
