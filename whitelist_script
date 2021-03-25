@@ -75,28 +75,3 @@ game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "FREE WHI
 
 end
 
-
-local player = game.Players.LocalPlayer
-local character = player.Character
-local money = 0
-local formatNumber = (function (n)
-    n = tostring(n)
-    return n:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
-end)
-    
-    local function SetCash()
-        money = 0
-        for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
-            if v.Name == 'MoneyDrop' then
-                local string = v.BillboardGui.TextLabel.Text
-                local filtered = string.gsub(string, "[^%w ]", "")
-                local cash = tonumber(filtered)
-                money = money + cash
-            end
-        end
-        game:GetService("Players"):FindFirstChild(game.Players.LocalPlayer.Name).PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = formatNumber(money)
-    end
-while wait()do 
-    SetCash()
-
-end
