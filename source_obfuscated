@@ -6,6 +6,7 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local CrashServer = Instance.new("TextButton")
+local CashAmount = Instance.new("TextButton")
 local _22 = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local AutoDropStop = Instance.new("TextButton")
@@ -60,6 +61,45 @@ local natass = "/"
     	notifSound.SoundId = "rbxassetid://1837974324"
     	notifSound.PlayOnRemove = true
     	notifSound:Destroy()
+
+end)
+
+
+CashAmount.Name = "CashAmount"
+CashAmount.Parent = Frame
+CashAmount.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CashAmount.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CashAmount.Position = UDim2.new(0.42397783, 0, 0.25454835, 0)
+CashAmount.Size = UDim2.new(0, 83, 0, 16)
+CashAmount.Font = Enum.Font.PermanentMarker
+CashAmount.Text = "Cash Amount"
+CashAmount.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashAmount.TextSize = 13.000
+CashAmount.MouseButton1Down:connect(function()
+local player = game.Players.LocalPlayer
+local character = player.Character
+local money = 0
+local formatNumber = (function (n)
+    n = tostring(n)
+    return n:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+end)
+    
+    local function SetCash()
+        money = 0
+        for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+            if v.Name == 'MoneyDrop' then
+                local string = v.BillboardGui.TextLabel.Text
+                local filtered = string.gsub(string, "[^%w ]", "")
+                local cash = tonumber(filtered)
+                money = money + cash
+            end
+        end
+        game:GetService("Players"):FindFirstChild(game.Players.LocalPlayer.Name).PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = formatNumber(money)
+    end
+while wait()do 
+    SetCash()
+
+end
 
 end)
 
@@ -125,6 +165,8 @@ game.StarterGui:SetCore("SendNotification", {
       Text = "Started Auto-Dropping"
     })
 	_G.DROPCASH = true
+
+
 end)
 
 
@@ -216,6 +258,7 @@ local notifSound = Instance.new("Sound",workspace)
   		Title = "22 Dupe";
   		Text = "Anti Afk Enabled."
   	})
+  
 end)
 
 
@@ -225,14 +268,18 @@ Credit.Parent = Frame
 Credit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Credit.BackgroundTransparency = 100.000
 Credit.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Credit.Position = UDim2.new(0.38397783, 0, 0.10454835, 0)
-Credit.Size = UDim2.new(0, 116, 0, 33)
+Credit.Position = UDim2.new(0.38397783, 0, 0.040454835, 0)
+Credit.Size = UDim2.new(0, 116, 0, 27)
 Credit.Font = Enum.Font.PermanentMarker
 Credit.Text = "Credit: kristina#1111"
 Credit.TextColor3 = Color3.fromRGB(85, 255, 255)
 Credit.TextSize = 14.000
 Credit.TextStrokeColor3 = Color3.fromRGB(85, 255, 255)
-Credit.TextWrapped = true
+Credit.MouseButton1Down:connect(function()
+
+
+end)
+
 
 Dupe.Name = "Dupe"
 Dupe.Parent = Frame
