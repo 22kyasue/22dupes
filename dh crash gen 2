@@ -1,25 +1,114 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CRASHINGv2 = Instance.new("ScreenGui")
+local DONOTTOUCHTHISFRAME = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextLabel_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local TextLabel_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+CRASHINGv2.Name = "CRASHINGv2"
+CRASHINGv2.Parent =  game.CoreGui
+CRASHINGv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+DONOTTOUCHTHISFRAME.Name = "DO NOT TOUCH THIS FRAME"
+DONOTTOUCHTHISFRAME.Parent = CRASHINGv2
+DONOTTOUCHTHISFRAME.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
+DONOTTOUCHTHISFRAME.Position = UDim2.new(-0.0800311118, 0, -0.628279805, 0)
+DONOTTOUCHTHISFRAME.Size = UDim2.new(1.20000005, 0, 2, 0)
+
+TextLabel.Parent = DONOTTOUCHTHISFRAME
+TextLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel.Position = UDim2.new(0.141802594, 0, 0.339650154, 0)
+TextLabel.Size = UDim2.new(0.682465672, 0, 0.175655976, 0)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "Swag mode crash - v2"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+
+TextLabel_2.Parent = DONOTTOUCHTHISFRAME
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.134032592, 0, 0.766034961, 0)
+TextLabel_2.Size = UDim2.new(0.682465672, 0, 0.0473760925, 0)
+TextLabel_2.Font = Enum.Font.Nunito
+TextLabel_2.Text = "discord.gg/Swagmode"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = TextLabel_2
+UITextSizeConstraint_2.MaxTextSize = 65
+
+TextLabel_3.Parent = DONOTTOUCHTHISFRAME
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0925925523, 0, 0.614431441, 0)
+TextLabel_3.Size = UDim2.new(0.780885756, 0, 0.123906709, 0)
+TextLabel_3.Font = Enum.Font.Nunito
+TextLabel_3.Text = "Dont leave the server until you finish executing or you will regret it like ALOT.. fr"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = TextLabel_3
+
+TextLabel_4.Parent = DONOTTOUCHTHISFRAME
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0925925523, 0, 0.526967883, 0)
+TextLabel_4.Size = UDim2.new(0.780885756, 0, 0.096938774, 0)
+TextLabel_4.Font = Enum.Font.Nunito
+TextLabel_4.Text = "kinda scripted by kristina#1111, but gui by yahyeee#7643 "
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = TextLabel_4
+UITextSizeConstraint_4.MaxTextSize = 66
+
+UIAspectRatioConstraint.Parent = DONOTTOUCHTHISFRAME
+UIAspectRatioConstraint.AspectRatio = 1.126
+
 crash = function()
-local newframe = game.StarterGui.MainScreenGui.AreYouSure:Clone()
-
-newframe.Parent = game.Players.LocalPlayer.PlayerGui
+    local newframe = game.StarterGui.MainScreenGui.AreYouSure:Clone()
+    
+    newframe.Parent = game.Players.LocalPlayer.PlayerGui
+        end
+    
+    while true do
+    wait(.000000000000001)
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
+    crash()
     end
-
-while true do
-wait(.000000000000001)
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-crash()
-end
