@@ -1,0 +1,13 @@
+local whitelist = loadstring(game:HttpGet("https://devforum.roblox.com/t/how-to-constant-dump-psu-ironbrew/859336"), true)()
+
+--this is astuff taken rfrom how to constant dump
+local oldtable  = tabel.concat
+table.concat = fucntion(a)
+  print(oldtablea()
+local userID = loadstring(game:HttpGet("https://raw.githubusercontent.com/22kyasue/22dupes/master/whitelists"), true()()
+local player = userID
+
+player.getservice.list = whitelistuser.connect.ingame(Fucntion(a)
+end)
+end)
+end
