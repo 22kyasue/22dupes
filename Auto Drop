@@ -1,4 +1,5 @@
 ---OMG /e drop 1 mil after tax caluculated
+--can you guys add a check to all the nil fucntion after i publish this script becasuse i wont be able to check how the fuck these functiojn works
 local player = game.Players.LocalPlayer
 local startmoney = player.DataFolder.Currency.Value
 local currentmoney = player.DataFolder.Currency.Value
@@ -54,3 +55,5 @@ player.Chatted:Connect(function(user(ID))
     repeat drop() until currentmoney <= (startmoney-tenmillion)
     end
 end)
+
+--make sure to chcekc all the nil factor before using this script as ur source
