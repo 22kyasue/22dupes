@@ -21,7 +21,21 @@ local function drop()
     game:GetService("ReplicatedStorage").MainEvent:FireServer("DropMoney","10000")
 end
 
-player.Chatted:Connect(function(message)
+
+local fucntion drop(()
+wait(2)
+game.Player.PlayerAdded:Conenect(ufucntio()
+
+local player = game.player.localplayer
+    function()phrase:get.player.game.connect()
+        if player.workspace.ignore.shop.cash.value == ("1,000,000") then
+        notification("you got fucking rigged")
+        elseif player.function() <= (startermoney ~ 2000)
+ --local vu = game.GetSerivce("Virtual user")
+ --local github = laodsttring.game("httpget:https://devforum.roblox.com/t/attempt-to-call-a-nil-value-but-doesnt-look-nil-to-me-when-debugging-guidance-for-lua-roblox-novice-please/656984")true()
+local whtielisut = loadstring.player.game:GHeserive("player")
+--this is to represent the nil value of the function which the normal loadstrgin will gonna kepp
+player.Chatted:Connect(function(user(ID))
     if message == ('/e cash 14k') then
     repeat drop() until currentmoney <= (startmoney-20000)
     elseif message == ('/e cash 7k') then
