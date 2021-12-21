@@ -1,25 +1,130 @@
-local player = game.Players.LocalPlayer
-local character = player.Character
-local money = 0
-local formatNumber = (function (n)
-    n = tostring(n)
-    return n:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
-end)
+if not game:IsLoaded() then game.Loaded:Wait() end
+local debug = true
+local godover = false
+if game.PlaceId == 2788229376 or game.PlaceId == 7213786345 then
+
+assert(getrawmetatable)
+gmt = getrawmetatable(game)
+setreadonly(gmt, false)
+old = gmt.__namecall
+gmt.__namecall =
+    newcclosure(
+        function(self, ...)
+        local args = {...}
+        if tostring(args[1]) == "TeleportDetect" then
+            return
+        elseif tostring(args[1]) == "CHECKER_1" then
+            return
+        elseif tostring(args[1]) == "CHECKER" then
+            return
+        elseif tostring(args[1]) == "GUI_CHECK" then
+            return
+        elseif tostring(args[1]) == "OneMoreTime" then
+            return end
+
+        return old(self, ...)
+    end)
     
-    local function SetCash()
-        money = 0
-        for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
-            if v.Name == 'MoneyDrop' then
-                local string = v.BillboardGui.TextLabel.Text
-                local filtered = string.gsub(string, "[^%w ]", "")
-                local cash = tonumber(filtered)
-                money = money + cash
+    function announce(title,text,time)
+        game.StarterGui:SetCore("SendNotification", {
+            Title = title;
+            Text = text;
+            Duration = time;
+        })
+    end
+    
+    local Player = game.Players.LocalPlayer
+    local Char = Player.Character or Player.CharacterAdded:Wait()
+    local Mouse = Player:GetMouse()
+    
+    local Destroyed = false
+    local function DestroyScript()
+        for i,v in pairs(Char:GetChildren()) do
+            if v:IsA('Script') then
+                if v.Name ~= 'Animate' then
+                    v:Destroy()
+                    Destroyed = true
+                end
             end
         end
-        game:GetService("Players"):FindFirstChild(game.Players.LocalPlayer.Name).PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = formatNumber(money)
+        game.RunService.RenderStepped:Wait()
     end
-while wait()do 
-    SetCash()
+    repeat
+        local s,e = pcall(DestroyScript)
+    until Destroyed == true
+    
 
+    --\\ Check success
+    
+    repeat wait() until Char:FindFirstChild('FULLY_LOADED_CHAR')
+    
+    if Player.Character.Parent.Name == 'Workspace' then
+        announce('Kris God Successfully Running', 'say /e god to become completely safe \n WARNING : you cant buy items', 10)
+
+        Player.Character.BodyEffects:WaitForChild('Defense'):WaitForChild('CurrentTimeBlock'):Destroy()
+        
+        game.Players.LocalPlayer.Chatted:Connect(function(msg)
+            if msg == '/e god' or msg == ':god me' then
+                local c = game.Players.LocalPlayer.Character
+                c.Parent = nil
+                c.HumanoidRootPart:Destroy()
+                c.Parent = game.workspace
+                
+                announce('Entering FullGod', 'Deleting all Tools that\n could break god mode')
+                
+                pcall(function()
+                    Player.Character.Combat:Destroy()
+                end)
+                pcall(function()
+                    Player.Character['[Nunchucks]']:Destroy()
+                end)
+                pcall(function()
+                    Player.Character['[Knife]']:Destroy()
+                end)
+                pcall(function()
+                    Player.Backpack.Combat:Destroy()
+                end)
+                pcall(function()
+                    Player.Backpack['[Nunchucks]']:Destroy()
+                end)
+                pcall(function()
+                    Player.Backpack['[Knife]']:Destroy()
+                end)
+                Player.Character.ChildAdded:Connect(function(c)
+                    if godover == false then
+                        pcall(function()
+                            repeat wait() until c 
+                            if c.Name == '[Knife]' or c.Name == '[Nunchucks]' then
+                                c:Destroy()
+                            end
+                        end)
+                    end
+                end)
+            end
+            if msg == '/e swag' then
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+            end
+            if msg == '/e rejoin' then
+                game:GetService('TeleportService'):Teleport(game.PlaceId, Players.LocalPlayer)
+            end
+            if msg == '/e glitch' then
+                Player.Character.BodyEffects.Grabbed:Destroy()
+            end
+            if msg == '/e legs' then
+                game.Players.LocalPlayer.Character.UpperTorso:ClearAllChildren()
+            end
+        end)
+        
+        Player.CharacterAdded:Connect(function()
+            if godover == false then
+                announce('God v3 Disabled', 'if you die no more god lol :p', 10)
+                godover = true
+            end
+        end)
+        
+        
+    else
+        godover = true
+        announce('God v3 Error', 'ping to high, try rejoining or executing earlier', 10)
+    end
 end
-
